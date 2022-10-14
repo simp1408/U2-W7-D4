@@ -1,0 +1,43 @@
+
+body{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+}
+#text{
+    border: 1px solid red;
+}
+.progress{
+    position: relative;
+    height: 10px;
+    width: 800%;
+    border: 10px solid #f4a261;
+    border-radius: 15px;
+}
+.progress .color{
+    position: absolute;
+    background-color: indigo;
+    width: 0%;
+    height: 10px;
+    border-radius: 15px;
+    animation: progres 4s infinite linear;    
+}
+@keyframes progres{
+    0%{
+      width: 0%;
+    }
+    25%{
+        width: 50%;
+    }
+    50%{
+        width: 75%;
+    }
+    75%{
+        width: 85%;
+    }
+    100%{
+        width: 100%;
+    }
+};
